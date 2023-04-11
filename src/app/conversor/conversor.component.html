@@ -4,16 +4,17 @@
     <label>Valor em Reais
     <input type="number" id="moeda1" name="val1">
     <select name="moeda de conversao" id="conv">
-      <option value="dolar">real para dólar</option>
-      <option value="euro">real para euro</option>
-      <option value="kwanza">real para kwanza</option>
+      <option value="1">real para dólar</option>
+      <option value="2">real para euro</option>
+      <option value="3">real para kwanza</option>
     </select>
     </label><br>
     <br>
+    <input type="number" id="moeda2" name="val2" placeholder="valor da moeda de cãmbio">
 
-    <br><button type="button" (click)="converter()" class="btncalcular">Calcular</button><br><br>
+    <br><button type="button" (click)="converter()" class="resp">Calcular</button><br><br>
 
     <label> Valor do Cambio </label><br><br>
-    <input id="resp" readonly><br><br>
+    <input type="number" [value]="resp"  readonly><br><br>
 
   </div>
