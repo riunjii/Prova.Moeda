@@ -18,3 +18,4 @@ import { ConversorComponent } from './conversor/conversor.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
