@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./conversor.component.css']
 })
 export class ConversorComponent {
-moeda1: number = 0;
-conversor: number = 0;
 cam: number = 0;
+
 }
 
 function converter() {
