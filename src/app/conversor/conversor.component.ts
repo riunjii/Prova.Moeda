@@ -5,12 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './conversor.component.html',
   styleUrls: ['./conversor.component.css']
 })
+
 export class ConversorComponent {
-cam: number = 0;
+moeda1!: number;
+resp!: number;
+
+
+
+converter()
+{
 
 }
 
-function converter() {
-
 }
+
+
 

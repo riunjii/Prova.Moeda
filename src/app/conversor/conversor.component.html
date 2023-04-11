@@ -1,26 +1,19 @@
     <h1>Conversor de Moedas</h1>
-    <label>Moeda Inicial
+    <div class="container">
+
+    <label>Valor em Reais
     <input type="number" id="moeda1" name="val1">
     <select name="moeda de conversao" id="conv">
-      <option value="real">real</option>
-      <option value="dolar">dólar</option>
-      <option value="euro">euro</option>
-      <option value="kwanza">kwanza</option>
+      <option value="dolar">real para dólar</option>
+      <option value="euro">real para euro</option>
+      <option value="kwanza">real para kwanza</option>
     </select>
     </label><br>
     <br>
 
-    <label>Moeda Inicial
-    <input type="number" id="moeda1" name="val1">
-    <select name="moeda de conversao" id="conv">
-      <option value="real">real</option>
-      <option value="dolar">dólar</option>
-      <option value="euro">euro</option>
-      <option value="kwanza">kwanza</option>
-    </select>
-    </label><br>
+    <br><button type="button" (click)="converter()" class="btncalcular">Calcular</button><br><br>
 
-    <button type="button" class="btncalcular">Calcular</button><br><br>
+    <label> Valor do Cambio </label><br><br>
+    <input id="resp" readonly><br><br>
 
-    <label> Cambio </label><br><br>
-    <input id="cambio" readonly><br><br>
+  </div>
