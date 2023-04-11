@@ -1,20 +1,19 @@
     <h1>Conversor de Moedas</h1>
-    <div class="container">
 
+<div class="container-fluid">
     <label>Valor em Reais
-    <input type="number" id="moeda1" name="val1">
-    <select name="moeda de conversao" id="conv">
+    <input type="number" name="moeda1" [(ngModel)]="moeda1">
+    <select name="moeda de conversao" id="conv" [(ngModel)]="holder">
       <option value="1">real para dólar</option>
       <option value="2">real para euro</option>
       <option value="3">real para kwanza</option>
     </select>
     </label><br>
     <br>
-    <input type="number" id="moeda2" name="val2" placeholder="valor da moeda de cãmbio">
+    <input type="number" name="moedaC" [(ngModel)]="moedaC" placeholder="valor da moeda de cãmbio">
 
     <br><button type="button" (click)="converter()" class="resp">Calcular</button><br><br>
 
     <label> Valor do Cambio </label><br><br>
-    <input type="number" [value]="resp"  readonly><br><br>
-
+    <input type="text" [(ngModel)]="resp" readonly><br><br>
   </div>
