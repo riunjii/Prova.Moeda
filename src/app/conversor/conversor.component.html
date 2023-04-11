@@ -1,16 +1,19 @@
     <h1>Conversor de Moedas</h1>
-    <h2>Índice de Massa Corporal</h2><br><br>
-
     <label>Moeda Inicial</label>
-    <input type="number" name="moeda1" [(ngModel)]="moeda1" class="input1"><br><br>
-    <label>Altura</label>
-    <input type="number" name="moeda2" [(ngModel)]="moeda2" class="input2"><br><br>
 
-    <button type="button" (click)="imc()" class="btncalcular">Calcular</button><br><br>
+    <input type="number" id="moeda1" name="val1">
+    <select name="moeda de conversao" id="conv">
+      <option value="real">real</option>
+      <option value="dolar">dólar</option>
+      <option value="euro">euro</option>
+      <option value="kwanza">kwanza</option>
+    </select>
 
-    <label class="resultado">Cambio</label><br><br>
+    <button type="button" (click)="converter()" class="btncalcular">Calcular</button><br><br>
+
+    <label> Cambio </label><br><br>
 
     <div class="results">
-    <input [value]= "cam" id="resultado" class="results" readonly><br><br>
-    <input [value]= "msg" id="classificação" class="results" readonly>
+    <input [value]= "cam" id="cambio" readonly><br><br>
+
     </div>
